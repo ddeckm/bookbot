@@ -16,8 +16,8 @@ def get_word_count(text):
 def get_char_count(text):
     char = {}
     for letter in text:
-        letters = text.lower()
-        if letter in char:
+        letters = letter.lower()
+        if letters in char:
             char[letters] += 1
         else:
             char[letters] = 1
